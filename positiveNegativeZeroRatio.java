@@ -33,12 +33,10 @@ class Result {
                 //System.out.println("zero element: " + arr.get(i));
             }
         }
-        double positivePortion = (double)countPositive / (double)arr.size();
-        System.out.println(positivePortion);
-        double negativePortion = (double)countNegative / (double)arr.size();
-        System.out.println(negativePortion);
-        double zeroPortion = 1 - positivePortion - negativePortion;
-        System.out.println(zeroPortion);
+        
+        System.out.println((double)countPositive / (double)arr.size());
+        System.out.println((double)countNegative / (double)arr.size());
+        System.out.println((double)countZeros / (double)arr.size());
     }
 
 }
