@@ -22,8 +22,7 @@ class Result {
         //exactly four of the five integers. 
         //Then print the respective minimum 
         //and maximum values as a single line of two space-separated long integers.
-        Collections.sort(arr);
-        //System.out.println(arr);
+        Collections.sort(arr); // sort to get the smallest first and largest last item        
         int smallestNumber = arr.get(0);
         int largestNumber = arr.get(4); // array is fixed size of 5 elements
         long sum = 0;
