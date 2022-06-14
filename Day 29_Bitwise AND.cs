@@ -28,8 +28,8 @@ class Result
     {
         int max = 0;
         for (int i = 1; i < N - 1; i++) {
-            for (int j = i+1; j <= N; j++) {
-                int num = i&j;
+            for (int j = i + 1; j <= N; j++) {
+                int num = i & j;
                 if (num > max && num < K) {
                     max = num;
                 }   
