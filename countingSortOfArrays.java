@@ -20,18 +20,21 @@ class CountingSort {
     3	  2	  [0, 2, 1, 1]
     4	  1	  [0, 3, 1, 1]
      */
-
+    
     public static List<Integer> countingSort(List<Integer> arr) {
-        // the assumption is that the array will have only elements between 0 and 99
-        Integer[] frequencyArray = new Integer[100];
-        Arrays.fill(frequencyArray, 0);
-        // iterate over every element of the array and add them to the frequency array
-        for (int i = 0; i < arr.size(); i++) {
-            frequencyArray[arr.get(i)]++;
+    
+        // we have to return an array of frequency of the elements
+        // create our array of size n = 100 (as per the task)
+        Integer[] results = new Integer[100];
+        // make all the elements of this array 0:
+        Arrays.fill(results, 0);
+        // iterate over the array and increment every value we encounter
+        for (int element: arr) {
+            results[element]++;
         }
-        List<Integer> resultingList = Arrays.asList(frequencyArray);
-        
-        return resultingList;
+        // the return type of List:
+        List<Integer> returnResult = Arrays.asList(results);
+        return returnResult;
     }
 
 }
