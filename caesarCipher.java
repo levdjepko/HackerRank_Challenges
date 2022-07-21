@@ -22,3 +22,29 @@ public static String caesarCipher(String s, int k) {
         return cipherAlphabet;
 
     }
+// SAME but Different:
+
+public static String caesarCipher(String s, int k) {
+        // rotate the String by k (Caesar Cipher)
+        StringBuilder sb = new StringBuilder();
+        int valueOfa = 'a';
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (Character.isLetter(c)) {
+                    boolean isCapital = Character.isUpperCase(c);
+                    int valueOfChar = Character.toLowerCase(c);
+                    int currentCharPosition = valueOfChar - valueOfa; // 0 for 'a'
+                    int newValue = (currentCharPosition + k) % 26 + valueOfa;
+                    char newCharacter = (char)newValue;
+                    if (isCapital) {
+                        sb.append(Character.toUpperCase(newCharacter));} 
+                    else {
+                        sb.append(newCharacter); 
+                        }
+                } else {
+                    sb.append(c);
+                }
+        }
+        return sb.toString();
+    }
+
