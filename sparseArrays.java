@@ -36,6 +36,31 @@ class Result {
         List<Integer> listResults = Arrays.asList(results);
         return listResults;
     }
+    // BELOW IS MORE EFFICIENT SOLUTION WITH HASMAP:
+    public static List<Integer> matchingStrings(List<String> strings, List<String> queries) {
+        // this can be solved with a HashMap
+        HashMap <String, Integer> map = new HashMap<>();
+        for (int i = 0; i < strings.size(); i++) {
+            if (!map.containsKey(strings.get(i))) {
+                map.put(strings.get(i), 1);
+            } else {
+                int currentCount = map.get(strings.get(i));
+                int newCount = currentCount + 1;
+                map.put(strings.get(i), newCount);
+            }
+        }
+        List <Integer> results = new ArrayList<>();
+        for (int i = 0; i < queries.size(); i++) {
+            if (map.containsKey(queries.get(i))) {
+                int count = map.get(queries.get(i));
+                results.add(count);
+            } else {
+                results.add(0);
+            }
+        }
+        return results;
+
+    }
 
 }
 
