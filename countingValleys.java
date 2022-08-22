@@ -1,5 +1,5 @@
 public static int countingValleys(int steps, String path) {
-        /* _/\      _
+        /* _/\      ___
               \    /
                \/\/     
                
