@@ -3,7 +3,6 @@ public static String caesarCipher(String s, int k) {
         String cipherAlphabet; // this will hold the new string
         StringBuilder sb = new StringBuilder();
         
-        
         for (int i = 0; i < s.length(); i++) {
             int asciiPositionOfLetter = (int)s.charAt(i);
             if (asciiPositionOfLetter >= 65 && asciiPositionOfLetter <= 90) {
@@ -23,6 +22,7 @@ public static String caesarCipher(String s, int k) {
         return cipherAlphabet;
 
     }
+
 // SAME but with A position, a little bit more flexible
 
 public static String caesarCipher(String s, int k) {
