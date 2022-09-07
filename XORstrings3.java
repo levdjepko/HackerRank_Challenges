@@ -6,6 +6,5 @@ public static String stringsXOR(String s, String t) {
             else
                 res += "1";
         }
-
         return res;
     }
