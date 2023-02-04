@@ -8,13 +8,15 @@
      */
 
     public static List<Integer> rotateLeft(int d, List<Integer> arr) {
-    // Write your code here 
-        List<Integer> newArray = new ArrayList<Integer>();
-        for (int i = d; i < arr.size(); i++) {
-            newArray.add(arr.get(i));
-        }
-        for (int i = 0; i < d; i++) {
-            newArray.add(arr.get(i));
+        List<Integer> newArray = new ArrayList<>(arr.size());
+        for (int i = 0; i < arr.size(); i++) {
+            int element = d + i;
+            if (element < arr.size()) {
+                newArray.add(arr.get(element));
+            } else {
+                element = element % arr.size();
+                newArray.add(arr.get(element));
+            }
         }
         return newArray;
     }
