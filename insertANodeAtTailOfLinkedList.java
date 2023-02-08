@@ -13,3 +13,9 @@ static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data
         temp.next = newNode; // add out node at the end of the linked list
         return head;        
     }
+
+static SinglyLinkedListNode insertNodeAtHead(SinglyLinkedListNode llist, int data) {
+        SinglyLinkedListNode newHead = new SinglyLinkedListNode(data);
+        newHead.next = llist;
+        return newHead;
+}
