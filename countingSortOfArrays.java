@@ -12,9 +12,9 @@ class CountingSort {
   original array, you increment the counter at that index. At the end, 
   run through your counting array, printing the value of each non-zero valued index that number of times.
 
-  Example
+  Example:
 
-  All of the values are in the range , so create an array of zeros, . The results of each iteration follow:
+  All of the values are in the range, so create an array of zeros, The results of each iteration follow:
 
     i	arr[i]	result
     0	  1	  [0, 1, 0, 0]
@@ -26,7 +26,7 @@ class CountingSort {
     
     public static List<Integer> countingSort(List<Integer> arr) {
     
-        // we have to return an array of frequency of the elements
+        // We have to return an array of frequency of the elements
         // create our array of size n = 100 (as per the task)
         
         Integer[] results = new Integer[100];    
