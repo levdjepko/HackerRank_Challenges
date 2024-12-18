@@ -23,7 +23,7 @@ class Result
 
     public static int hourglassSum(List<List<int>> arr)
     {
-        //array has a size of i * j
+        //The array has a size of i * j
         int tempSum = 0;
         int max = int.MinValue;
         for (int i = 0; i < 4; i++) {
