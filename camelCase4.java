@@ -27,12 +27,13 @@ import java.util.*;
 
         whiteSheetOfPaper()
 
-        picture frame */
+        picture frame 
+        */
 
 public class Solution {
     
     static String splitStringToWords(String str) {
-         // all small letters
+        // all small letters
         int leftPosition = 0;
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i < str.length(); i++) {
@@ -48,7 +49,7 @@ public class Solution {
     }
     
     static String combineStringToWords(String str) {
-         // all small letters
+        // all small letters
         int leftPosition = 0;
         StringBuilder sb = new StringBuilder();
         // first word
@@ -59,7 +60,7 @@ public class Solution {
                 break;
             }
         }
-        //rest of the words
+        // rest of the words
         for (int i = leftPosition; i < str.length(); i++) {
             if (str.charAt(i) == ' ') {
                 sb.append(str.substring(leftPosition, leftPosition + 1).toUpperCase() + str.substring(leftPosition + 1, i).toLowerCase());
