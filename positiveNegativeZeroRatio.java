@@ -10,7 +10,6 @@ class Result {
 
 
     public static void plusMinus(List<Integer> arr) {
-    // Write your code here
         //System.out.println(arr.toString());
         int countPositive = 0;
         int countNegative = 0;
