@@ -9,10 +9,10 @@
         // sort an array
         Collections.sort(arr);
         int minDifference = Integer.MAX_VALUE;
-        //return array:
+        // return array:
         List<Integer> toReturn = new ArrayList<Integer>();
         for (int i = 0; i < arr.size() - 1; i++) {
-            if (arr.get(i+1) - arr.get(i) <= minDifference) {
+            if (arr.get(i + 1) - arr.get(i) <= minDifference) {
                 minDifference = arr.get(i+1) - arr.get(i);
             }
         }
