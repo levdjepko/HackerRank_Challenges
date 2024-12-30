@@ -1,6 +1,6 @@
 public static String caesarCipher(String s, int k) {
         
-        String cipherAlphabet; // this will hold the new string
+        String cipherAlphabet; // This will hold the new string
         StringBuilder sb = new StringBuilder();
         
         for (int i = 0; i < s.length(); i++) {
@@ -10,7 +10,7 @@ public static String caesarCipher(String s, int k) {
                 int shiftedPosition = ((asciiPositionOfLetter - 65 + k) % 26) + 65;
                 sb.append((char)shiftedPosition);
             } else if (asciiPositionOfLetter >= 97 && asciiPositionOfLetter <= 122) {
-                // lower case character
+                // lowercase character
                 int shiftedPosition = ((asciiPositionOfLetter - 97 + k) % 26) + 97;
                 sb.append((char)shiftedPosition);
             } else {
