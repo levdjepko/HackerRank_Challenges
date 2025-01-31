@@ -1,5 +1,6 @@
 public static int countingValleys(int steps, String path) {
-        /* _/\      ___
+        /*
+           _/\      ___
               \    /
                \/\/     
                
@@ -9,8 +10,8 @@ public static int countingValleys(int steps, String path) {
           Given the sequence of up and down steps during a hike, find and print the number of valleys walked through.
         */
         int currentHeight = 0;
-        // all the hikes start and end at the height of sea level (0)
-        // so, we need to count how many separate valleys (or getting under the sea level) there are
+        //All the hikes start and end at the height of sea level (0)
+        //So, we need to count how many separate valleys (or getting under the sea level) there are
         boolean isValley = false;
         int countValleys = 0;
         
