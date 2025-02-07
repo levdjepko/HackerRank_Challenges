@@ -15,8 +15,8 @@ class Result {
     /*
      * Complete the 'breakingRecords' function below.
      *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts INTEGER_ARRAY scores as parameter.
+     * count the times when the records were beaten
+     * 
      */
 
     public static List<Integer> breakingRecords(List<Integer> scores) {
@@ -28,12 +28,12 @@ class Result {
         
         for (int i = 1; i < scores.size(); i++) {
             if (scores.get(i) > maxSoFar) {
-                //this brakes the Max record
+                // this breaks the Max record
                 maxSoFar = scores.get(i);
                 numOfMAXRecords++;
             }
             if (scores.get(i) < minSoFar) {
-                //this brakes the Max record
+                // this breaks the Max record
                 minSoFar = scores.get(i);
                 numOfMinRecords++;
             }
