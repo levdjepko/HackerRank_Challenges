@@ -60,7 +60,7 @@ public class Solution {
                 break;
             }
         }
-        // rest of the words
+        // the rest of the words
         for (int i = leftPosition; i < str.length(); i++) {
             if (str.charAt(i) == ' ') {
                 sb.append(str.substring(leftPosition, leftPosition + 1).toUpperCase() + str.substring(leftPosition + 1, i).toLowerCase());
