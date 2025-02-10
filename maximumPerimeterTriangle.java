@@ -11,7 +11,7 @@ class Result {
         Collections.sort(sticks);
         int side1, side2, side3;
         for (int i = sticks.size() - 1; i >= 2; i--) {
-            side1 = sticks.get(i);      // longest side
+            side1 = sticks.get(i);      // the longest side
             side2 = sticks.get(i - 1);  // 2nd longest
             side3 =  sticks.get(i - 2); // shortest side
             if (side2 + side3 > side1){
