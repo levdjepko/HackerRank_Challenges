@@ -23,7 +23,7 @@ public static String caesarCipher(String s, int k) {
 
     }
 
-// SAME but with A position, a little bit more flexible
+// SAME but with an A position, a little bit more flexible
 
 public static String caesarCipher(String s, int k) {
         // rotate the String by k (Caesar Cipher)
