@@ -1,9 +1,5 @@
 class CountingSort {
     /*
-     * Complete the 'countingSort' function below.
-     *
-     * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts INTEGER_ARRAY arr as parameter.
      
      Alternative Sorting
   Another sorting method, the counting sort, does not require comparison. 
@@ -14,7 +10,7 @@ class CountingSort {
 
   Example:
 
-  All of the values are in the range, so create an array of zeros, The results of each iteration follow:
+  All of the values are in the range, so create an array of zeros. The results of each iteration follows:
 
     i	arr[i]	result
     0	  1	  [0, 1, 0, 0]
