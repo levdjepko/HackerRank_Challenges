@@ -12,18 +12,13 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     * Complete the 'pangrams' function below.
-     *
-     * The function is expected to return a STRING.
-     * The function accepts STRING s as parameter.
-     */
+    
 
     public static String pangrams(String s) {
         char [] inputInCharacters = s.toCharArray();
         HashMap <Character, Integer> frequency = new HashMap<Character, Integer>();
         int numberOfLetters = 0;
-        // iterate over all the character in a string, and fill the hashMap with characters:
+        // iterate over all the characters in a string, and fill the hashMap with characters:
         for (int i = 0; i < inputInCharacters.length; i++) {
             if (!frequency.containsKey(Character.toLowerCase(inputInCharacters[i]))) {
                     frequency.put(Character.toLowerCase(inputInCharacters[i]), 1);
