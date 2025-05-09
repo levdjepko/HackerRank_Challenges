@@ -1,6 +1,7 @@
 public static List<Integer> missingNumbers(List<Integer> arr, List<Integer> brr) {
+        
         // find the numbers that are missing in arr compared to brr
-        // utilize the hashmap
+        // with the hashmap
         HashMap <Integer, Integer> hm = new HashMap<>();
         // find out what is in brr:
         for (int i = 0; i < brr.size(); i++) {
@@ -23,7 +24,7 @@ public static List<Integer> missingNumbers(List<Integer> arr, List<Integer> brr)
             }
         }
         
-        // check possible remaining items in the hashMap
+        // check possible remaining items in the HashMap
         for (int key : hm.keySet()) {
             if (hm.get(key) != 0) {
                 resultSet.add(key);
