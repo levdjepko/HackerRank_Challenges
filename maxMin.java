@@ -1,6 +1,6 @@
 public static int maxMin(int k, List<Integer> arr) {
         // create an array of length k with 
-        //smallest difference between MAX elemenet and MIN element
+        // the smallest difference between MAX element and MIN element
         Collections.sort(arr);
         // we implement a sliding window and check Max 
         // and Min while iterating over all the elements of the input array
