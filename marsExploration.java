@@ -13,14 +13,11 @@ import static java.util.stream.Collectors.toList;
 class Result {
 
     /*
-     * Complete the 'marsExploration' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts STRING s as parameter.
+     * Complete the 'marsExploration' function below
      */
 
     public static int marsExploration(String s) {
-        /*Explanation
+        /* Explanation
 
         Sample 0
         S = SOSSPSSQSSOR, and signal length |s| = 12 . Sami sent  SOS messages (i.e.: 12/3 = 4).
