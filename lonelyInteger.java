@@ -1,5 +1,5 @@
 public static int lonelyinteger(List<Integer> a) {
-    // Write your code here
+        // Find an integer that doesn't have a duplicate in the array
         Collections.sort(a);
         int lonelyInt = -1;
         if (a.size() == 1) {
