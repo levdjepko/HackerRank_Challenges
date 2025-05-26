@@ -7,7 +7,7 @@ int count = 0;
 using (WebClient wc = new System.Net.WebClient())
 {
     var json = wc.DownloadString(URL);
-    // we have a JSON object that we have to access now
+    // We have a JSON object that we have to access now
     var jo = JObject.Parse(json);
     var title = jo["parse"]["title"].ToString();
     var text = jo["parse"]["text"].ToString();
