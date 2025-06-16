@@ -13,8 +13,7 @@ import static java.util.stream.Collectors.toList;
 class Result {
 
     /*
-     * Complete the 'twoArrays' function below.
-     *
+     
      * The function is expected to return a STRING.
      * The function accepts following parameters:
      *  1. INTEGER k
@@ -31,7 +30,7 @@ class Result {
             1 2 2 1     A = [1, 2, 2, 1]
             3 3 3 4     B = [3, 3, 3, 4] --> return NO
         */
-        // Seems liek we can sort one array ascending, and the other descending
+        // Seems like we can sort one array ascending, and the other descending
         Collections.sort(A); 
         Collections.sort(B, Collections.reverseOrder());
         
