@@ -1,8 +1,7 @@
     /*
-     * Complete the 'rotateLeft' function below.
-     *
+    
      * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts following parameters:
+     * The function accepts the following parameters:
      *  1. INTEGER d
      *  2. INTEGER_ARRAY arr
      */
