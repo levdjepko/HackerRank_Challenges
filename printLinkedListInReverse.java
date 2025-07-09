@@ -1,5 +1,5 @@
 public static void reversePrint(SinglyLinkedListNode llist) {
-        // Write your code here
+        // Use Stack to print the linked list in reverse order
         Stack<Integer> stack = new Stack<>();
         
         while (llist != null) {
