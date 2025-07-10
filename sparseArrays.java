@@ -13,7 +13,7 @@ import static java.util.stream.Collectors.toList;
 class Result {
 
     /*
-     * Complete the 'matchingStrings' function below.
+     
      *
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts following parameters:
