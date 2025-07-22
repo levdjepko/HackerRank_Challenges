@@ -3,7 +3,7 @@ static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data
         // new node to insert in the linked list
         if (head == null) {
             return newNode;
-            // in case the provided linked list is empty
+            // edge case in case the provided linked list is empty
         }
         SinglyLinkedListNode temp = head;
         while (temp.next != null) {
