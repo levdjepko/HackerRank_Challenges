@@ -1,7 +1,7 @@
 public static int minimumNumber(int n, String password) {
   
         // Return the minimum number of characters to make the password strong
-        // Strong password has length >6, uppercasse char, lowercase char, digit, and special char
+        // Strong password has length > 6, uppercase char, lowercase char, digit, and special char
   
         String special_characters = "!@#$%^&*()-+";
         boolean hasUppercase = false;
