@@ -1,4 +1,5 @@
 public class Solution {
+    // check whether the number is "smart"
     public static boolean isSmartNumber(int num) {
         int val = (int) Math.sqrt(num);    
         if(Math.pow(val, 2) == num)
