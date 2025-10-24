@@ -23,7 +23,7 @@ class Result {
         /*
         x1 + v1*A = x3
         x2 + v2*B = x3
-        This is what they asked for. The wording of this problem is incorrect. In reality, they have to jump at each step
+        This is what they asked for. The wording of this problem is incorrect. In reality, they HAVE to jump at each step
         int left = x1;
         int right = x2;
         
@@ -44,7 +44,7 @@ class Result {
         // x1 - x2 = i v2 - i v1
         // i = (x1 - x2) / (v2 - v1)
         if (v2 - v1 == 0) {
-            //same speeds, thus we should have the same x1 and x2:
+            // same speeds, thus we should have the same x1 and x2:
             if (x1 - x2 == 0) {
                 return "YES";
             } else {
