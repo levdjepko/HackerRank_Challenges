@@ -9,22 +9,18 @@ import java.util.regex.*;
 class Result {
 
 
-    public static void plusMinus(List<Integer> arr) {
-        //System.out.println(arr.toString());
+    public static void plusMinus(List<Integer> arr) {        
         int countPositive = 0;
         int countNegative = 0;
         int countZeros = 0;
         
         for (int i = 0; i < arr.size(); i++) {
             if (arr.get(i) < 0) {
-                countNegative++;
-                //System.out.println("Negative element: " + arr.get(i));
+                countNegative++;                
             } else if (arr.get(i) > 0) {
-                countPositive++;
-                //System.out.println("Positive element: " + arr.get(i));
+                countPositive++;                
             } else {
-                countZeros++;
-                //System.out.println("zero element: " + arr.get(i));
+                countZeros++;                
             }
         }
         
