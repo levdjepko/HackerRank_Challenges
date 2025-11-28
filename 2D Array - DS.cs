@@ -15,15 +15,14 @@ using System;
 class Result
 {
 
-    /*
-     * Complete the 'hourglassSum' function below.     
+    /*       
      * The function is expected to return an INTEGER.
      * The function accepts 2D_INTEGER_ARRAY arr as parameter.
      */
 
     public static int hourglassSum(List<List<int>> arr)
     {
-        //The array has a size of i * j
+        // The array has a size of i * j = 4
         int tempSum = 0;
         int max = int.MinValue;
         for (int i = 0; i < 4; i++) {
