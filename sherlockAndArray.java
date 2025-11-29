@@ -1,6 +1,6 @@
 
 public static String balancedSums(List<Integer> arr) {
-        // find an element in the array such that sum of elements to the left equals sum of elements to the right
+        // find such an element in the array such that the sum of elements to the left equals the sum of elements to the right
         int left = 0;
         int right = 0;
         for (int i = 1; i < arr.size(); i++) {
@@ -14,5 +14,4 @@ public static String balancedSums(List<Integer> arr) {
             right -= arr.get(i + 1);
         }
         return "NO";
-
     }
