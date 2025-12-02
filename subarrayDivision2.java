@@ -13,8 +13,6 @@ import static java.util.stream.Collectors.toList;
 class Result {
 
     /*
-     * Complete the 'birthday' function below.
-     *
      * The function is expected to return an INTEGER.
      * The function accepts following parameters:
      *  1. INTEGER_ARRAY s
@@ -23,7 +21,7 @@ class Result {
      */
 
     public static int birthday(List<Integer> s, int d, int m) {
-    // Write your code here
+
     int length = m;
     int sum = d;
     int count = 0;
