@@ -3,8 +3,9 @@ public static int migratoryBirds(List<Integer> arr) {
     Given an array of bird sightings where every element represents a bird type id, determine the id of      
     the most frequently sighted type. 
     If more than 1 type has been spotted that maximum amount, return   
-    the smallest of their ids.
+    the smallest (earliest) of their ids.
     */
+        // sorting is kind of expensive but is one of the easiest approaches to this problem
         Collections.sort(arr);
         int maxCount = 0;
         int maxType = 0;
