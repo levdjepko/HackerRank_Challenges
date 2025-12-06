@@ -1,5 +1,4 @@
- public static void separateNumbers(String s)  {
-    // Write your code here
+ public static void separateNumbers(String s)  { 
 
         String sub = "";
         boolean isValid = false;
