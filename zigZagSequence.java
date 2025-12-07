@@ -26,15 +26,15 @@ public class Main {
     
         int st = mid + 1;
         int ed = n - 2;
-        while(st <= ed){
+        while (st <= ed) {
             temp = a[st];
             a[st] = a[ed];
             a[ed] = temp;
             st = st + 1;
             ed = ed - 1;
         }
-        for(int i = 0; i < n; i++){
-            if(i > 0) System.out.print(" ");
+        for (int i = 0; i < n; i++) {
+            if (i > 0) System.out.print(" ");
             System.out.print(a[i]);
         }
         System.out.println();
