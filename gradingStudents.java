@@ -1,6 +1,7 @@
 public static List<Integer> gradingStudents(List<Integer> grades) {
-    // Write your code here
+    
         List<Integer> result = new ArrayList<Integer>();
+    
         for (Integer grade : grades) {
             if (grade < 38) {
                 result.add(grade);
