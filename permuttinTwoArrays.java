@@ -12,17 +12,17 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     
+    /*     
      * The function is expected to return a STRING.
-     * The function accepts following parameters:
+     * The function accepts the following parameters:
      *  1. INTEGER k
      *  2. INTEGER_ARRAY A
      *  3. INTEGER_ARRAY B
      */
 
     public static String twoArrays(int k, List<Integer> A, List<Integer> B) {
-        /*  2           q = 2
+        /*  
+            2           q = 2
             3 10        A[] and B[] size n = 3, k = 10
             2 1 3       A = [2, 1, 3]
             7 8 9       B = [7, 8, 9] --> Return YES
@@ -30,7 +30,7 @@ class Result {
             1 2 2 1     A = [1, 2, 2, 1]
             3 3 3 4     B = [3, 3, 3, 4] --> return NO
         */
-        // Seems like we can sort one array ascending, and the other descending
+        // sort one array ascending, and the other descending
         Collections.sort(A); 
         Collections.sort(B, Collections.reverseOrder());
         
