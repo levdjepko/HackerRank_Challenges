@@ -1,11 +1,9 @@
 class Result {
 
     /*
-     * Complete the 'flippingBits' function below.
-     *
-     * The function is expected to return a LONG_INTEGER.
-     * The function accepts LONG_INTEGER n as parameter.
-     It accepts the Long number and flips every bit from 0 -> 1 and from 1 -> 0, then returns the resulting Long
+     *     The function is expected to return a LONG_INTEGER.
+     *     The function accepts LONG_INTEGER n as parameter.
+           It accepts the Long number and flips every bit from 0 -> 1 and from 1 -> 0, then returns the resulting Long
      */
 
     public static long flippingBits(long n) {
