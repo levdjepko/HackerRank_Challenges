@@ -1,7 +1,6 @@
 public static int pickingNumbers(List<Integer> a) 
     {    	
-        HashMap <Integer, Integer> frequency = new HashMap<>();  
-      
+        HashMap <Integer, Integer> frequency = new HashMap<>();        
         for (int i = 0; i < a.size(); ++i) 
         {  
             if (frequency.containsKey(a.get(i)))  
