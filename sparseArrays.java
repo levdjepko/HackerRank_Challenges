@@ -12,11 +12,9 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     
-     *
+    /*          
      * The function is expected to return an INTEGER_ARRAY.
-     * The function accepts following parameters:
+     * The function accepts the following parameters:
      *  1. STRING_ARRAY strings
      *  2. STRING_ARRAY queries
      */
@@ -36,7 +34,7 @@ class Result {
         List<Integer> listResults = Arrays.asList(results);
         return listResults;
     }
-    // BELOW IS MORE EFFICIENT SOLUTION WITH HASMAP:
+    // BELOW IS A MORE EFFICIENT SOLUTION WITH HASMAP:
     public static List<Integer> matchingStrings(List<String> strings, List<String> queries) {
         // this can be solved with a HashMap
         HashMap <String, Integer> map = new HashMap<>();
